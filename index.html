@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Quiz WebSite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="ic.png" type="image/x-icon">
+</head>
+<body>
+    <!-- quiz start  -->
+    <div class="startbtn">
+        <button>Start Quiz </button>
+    </div>
+
+    <!-- info box -->
+    <div class="infobox">
+        <div class="infotitle">
+            <span>Some Rules of this Quiz</span>
+        </div>
+        <div class="infolist">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you selected ypur answer, you can't reselect.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- quiz box  -->
+    <div class="quizbox">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="timetext">Time Left</div>
+                <div class="timersec">15</div>
+            </div>
+            <div class="timeline"></div>
+        </header>
+        <section>
+            <div class="quetext">
+                <span>What does html stands for?</span>
+            </div>
+            <div class="optionlist">
+                <!-- <div class="option">
+                    <span>abcdeee</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>abcdeee</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>abcdeee</span>
+                </div>
+                <div class="option">
+                    <span>abcdeee</span>
+                </div> -->
+            </div>
+        </section>
+        <footer>
+            <div class="totalque">
+                <span><p>2</p>of<p>5</p>questions</span>
+            </div>
+            <button class="nextbtn">Next Question</button>
+        </footer>
+    </div>
+    <!-- result box  -->
+    <div class="resultbox">
+        <div class="icon"><i class="fas fa-crown"></i></div>
+        <div class="completetext">You've completed the Quiz!</div>
+        <div class="scoretext">
+            <!-- <span>and sorry,You got only <p>2</p> out of<p>5</p></span> -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="question.js"></script>
+
+</body>
+</html>
